@@ -1,0 +1,46 @@
+<div class="legacy-container" *ngIf="list">
+  <h1 class="legacy-title">{{list.name}}</h1>
+  <div class="legacy-panel">
+  <table class="legacy-table legacy-table-items" cellspacing="0" cellpadding="4" border="1">
+      <thead>
+    <tr><th class="col-item">Item</th><th>Actions</th></tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let it of list.items">
+          <td>
+            <div *ngIf="editingId !== it.id">{{it.text}}</div>
+            <div *ngIf="editingId === it.id">
+              <label for="editText" class="visually-hidden">Edit item</label>
+              <input id="editText" [(ngModel)]="editingText" placeholder="Enter item text" />
+            </div>
+          </td>
+          <td>
+            <ng-container *ngIf="editingId !== it.id; else editActions">
+              <a href="javascript:void(0)" (click)="startEdit(it)">Edit</a>
+              &nbsp;|&nbsp;
+              <a href="javascript:void(0)" (click)="deleteItem(it)">Delete</a>
+            </ng-container>
+            <ng-template #editActions>
+              <a href="javascript:void(0)" (click)="saveEdit(it)">Save</a>
+              &nbsp;|&nbsp;
+              <a href="javascript:void(0)" (click)="cancelEdit()">Cancel</a>
+            </ng-template>
+          </td>
+        </tr>
+        <tr *ngIf="list.items.length === 0"><td colspan="2"><em>No items</em></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="legacy-panel">
+  <label for="newItemText">New item text:</label>
+  <input id="newItemText" type="text" [(ngModel)]="newItemText" placeholder="e.g. Milk" />
+    <button (click)="addItem()">Add</button>
+  </div>
+
+  <div class="legacy-actions">
+    <a href="javascript:void(0)" (click)="back()">&laquo; Back to lists</a>
+  </div>
+
+  <div *ngIf="error" class="legacy-error">{{error}}</div>
+</div>

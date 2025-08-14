@@ -1,0 +1,30 @@
+<div class="legacy-container">
+  <h1 class="legacy-title">Shopping Lists</h1>
+  <div class="legacy-panel">
+  <table class="legacy-table legacy-table-lists" cellspacing="0" cellpadding="4" border="1">
+      <thead>
+    <tr><th class="col-name">Name</th><th>Items</th><th>Actions</th></tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let l of lists" (dblclick)="open(l)">
+          <td title="{{l.name}}">{{l.name}}</td>
+          <td align="center">{{l.itemCount}}</td>
+          <td>
+            <a href="javascript:void(0)" (click)="open(l)">Open</a>
+            &nbsp;|&nbsp;
+            <a href="javascript:void(0)" (click)="deleteList(l.id)">Delete</a>
+          </td>
+        </tr>
+        <tr *ngIf="lists.length === 0"><td colspan="3"><em>No lists yet</em></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="legacy-panel">
+  <label for="newListName">New list name:</label>
+  <input id="newListName" type="text" [(ngModel)]="newListName" placeholder="e.g. Grocery list Friday" />
+    <button (click)="addList()">Add</button>
+  </div>
+
+  <div *ngIf="error" class="legacy-error">{{error}}</div>
+</div>

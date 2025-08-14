@@ -1,0 +1,8 @@
+.legacy-container { font-family: Tahoma, Verdana, Arial, sans-serif; font-size: 13px; }
+.legacy-title { background: linear-gradient(#e0e0e0, #c0c0c0); padding: 6px 10px; border: 1px solid #999; box-shadow: 1px 1px 0 #fff inset; }
+.legacy-panel { border: 1px solid #999; padding: 8px; margin: 10px 0; background: #f5f5f5; }
+.legacy-table { width: 100%; border-collapse: collapse; background: #fff; }
+.legacy-table th { background: #dcdcdc; border: 1px solid #aaa; text-align: left; padding: 4px; }
+.legacy-table td { border: 1px solid #ccc; padding: 4px; }
+.legacy-error { color: #a00; border: 1px solid #a00; padding: 6px; background: #fff0f0; }
+.legacy-table-lists .col-name { width: 70%; }
