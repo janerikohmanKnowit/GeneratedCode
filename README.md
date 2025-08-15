@@ -1,3 +1,18 @@
+# This project was created completely by GitHub Copilot Agent mode using GPT-5
+It's a test, and demonstrates the capabilities of the tool.
+It can be used as a starting point for testing out how copilot can assist in building applications.
+
+Some things that could be improved include:
+
+- Adding capabilities to rename lists
+- Modernizing the UI
+- Remove superfluous GUI elements
+- Adding user authentication
+- Implementing a database backend
+
+The idea is to use this as a base, and coach your Copilot to assist you in doing these things.
+
+
 # Shopping List Demo (Old-school UI)
 
 A .NET 8 Web API + Angular 17 sample app with in-memory storage and a deliberately 2005-style UI.
