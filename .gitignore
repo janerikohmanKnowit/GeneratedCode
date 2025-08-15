@@ -1,0 +1,99 @@
+# ---- OS-specific ----
+.DS_Store
+Thumbs.db
+
+# ---- IDE/Editor ----
+.vs/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# ---- User-specific files ----
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ---- Build results (.NET) ----
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+
+# dotnet artifacts
+artifacts/
+*.dbmdl
+*.mdf
+*.ldf
+*.ndf
+mono_crash.*
+
+# NuGet
+packages/
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+# Test results
+[Tt]est[Rr]esult*/
+TestResult.xml
+*.trx
+*.coverage
+*.coveragexml
+
+# ReSharper / Rider / NCrunch
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+_nCrunch_*
+.*crunch*.local.xml
+
+# Publishing
+publish/
+
+# ---- Secrets & local configs ----
+.env
+.env.local
+.env.*.local
+secrets.json
+*.secret
+*.secrets
+appsettings.local.json
+appsettings.*.local.json
+# Keep standard appsettings and appsettings.Development.json tracked
+
+# ---- Node/Angular ----
+frontend/**/node_modules/
+frontend/**/dist/
+frontend/**/coverage/
+frontend/**/.angular/
+frontend/**/.angular/cache/
+frontend/**/.cache/
+frontend/**/.vercel/
+
+# Logs (Node)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# Sass/Less caches
+.sass-cache/
+
+# E2E test artifacts
+frontend/**/cypress/videos/
+frontend/**/cypress/screenshots/
+playwright-report/
+test-results/
+
+# Misc editor swap files
+*.swp
+*.swo
+*.swn
+*.swm
