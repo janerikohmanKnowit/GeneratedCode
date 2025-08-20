@@ -12,7 +12,7 @@ Some things that could be improved include:
 
 The idea is to use this as a base, and coach your Copilot to assist you in doing these things.
 
-The original prompt is included in file [original_prompt.txt](original_prompt.txt)
+The original prompt is included in file [original-prompt.txt](original-prompt.txt)
 
 
 # Shopping List Demo (Old-school UI)
