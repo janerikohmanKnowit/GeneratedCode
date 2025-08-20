@@ -1,0 +1,16 @@
+We will create a .net core web application from scratch
+Angular as front end, backend micro service
+
+We won't have a real backend, this is for a demo so all our backend storage will be in-memory
+
+Can you create a sample application - a shopping list application
+
+* App should show look old - think 2005 web - we want to have as an excecise to smarten up the UI
+* It should display a list of shopping lists (e.g. "Grocery list friday", "Weekend party", "School start clothes", ..)
+* Selecting a shoppping-list should open the list and show the content
+* It should be possible to add, edit and remove items (free text) in the list
+* It should be possible to add or remove shopping lists
+* It should not be possible to rename a shopping list (this will be an excercise later)
+* There should be a button to reset the application, removing all changes done and showing the default lists.
+
+Make a plan for how you would like to do this and let me check it
