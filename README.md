@@ -58,3 +58,6 @@ The Angular dev server proxies /api to http://localhost:5000.
 ## Notes
 - State is in-memory and resets on API process restart or via the Reset button.
 - UI is intentionally dated to be improved later.
+
+# Current UI (or rather 2005 UI....)
+![Example UI](image.png)
